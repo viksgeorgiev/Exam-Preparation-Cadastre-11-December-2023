@@ -13,8 +13,8 @@
 
             var projectDir = GetProjectDirectory();
 
-            //ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
-            //ExportEntities(dbContext, projectDir + @"ExportResults/");
+            ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ExportEntities(dbContext, projectDir + @"ExportResults/");
 
             using (var transaction = dbContext.Database.BeginTransaction())
             {
